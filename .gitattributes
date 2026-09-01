@@ -1,0 +1,7 @@
+artifacts/agentic/** linguist-generated=true
+artifacts/results/** linguist-generated=true
+artifacts/paper/** linguist-generated=true
+*.csv linguist-generated=true
+*.json linguist-generated=true
+*.pdf binary
+*.png binary

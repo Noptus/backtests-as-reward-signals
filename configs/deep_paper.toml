@@ -1,0 +1,44 @@
+[experiment]
+seeds = 2000
+n_assets = 30
+validation_days = 1260
+confirmation_days = 1260
+budgets = [1, 10, 25, 50, 100, 250]
+cost_bps = 0.0
+base_seed = 50000
+workers = 8
+
+[power]
+seeds = 250
+signal_bps = [0.5, 1.0, 2.0]
+cost_bps = 0.0
+base_seed = 300000
+
+[empirical_null]
+panels = [
+  "industries_49",
+  "size_bm_25",
+  "size_bm_100",
+  "size_momentum_25",
+  "size_short_reversal_25",
+]
+block_starts = [1990, 2002, 2014]
+null_paths_per_cell = 20
+cost_bps = 0.0
+
+[agentic]
+model = "sonnet"
+quartets_per_cell = 4
+initial_candidates = 5
+rounds = 5
+candidates_per_round = 4
+batch_pairs = 10
+panels = [
+  "industries_49",
+  "size_bm_25",
+  "size_bm_100",
+  "size_momentum_25",
+  "size_short_reversal_25",
+]
+block_starts = [1990, 2002, 2014]
+cost_bps = 0.0

@@ -1,0 +1,7 @@
+{
+  "config": "configs/deep_paper.toml",
+  "rows": 13500,
+  "candidate_rows": 562500,
+  "result_sha256": "861f6bacdebe2a1e8e05e1b3d2b9f0b1e64bff50bbca226130201cd7f090aad8",
+  "audit_sha256": "22c939c0eb702baebb23db5bc2c0e2e0bb320f7fcd4673943eccb161381b7612"
+}

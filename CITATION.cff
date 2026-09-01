@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or benchmark, please cite the working paper."
+title: "Backtests as Reward Signals: Controlled False Discovery in Autonomous Alpha Research"
+type: software
+authors:
+  - family-names: Caillon
+    given-names: Raphael
+version: 0.1.0
+date-released: 2026-09-01
+repository-code: "https://github.com/Noptus/backtests-as-reward-signals"
+url: "https://github.com/Noptus/backtests-as-reward-signals/blob/main/output/pdf/backtests_as_reward_signals.pdf"
+license: MIT
+keywords:
+  - backtest overfitting
+  - autonomous agents
+  - adaptive data analysis
+  - quantitative finance
+preferred-citation:
+  type: article
+  title: "Backtests as Reward Signals: Controlled False Discovery in Autonomous Alpha Research"
+  authors:
+    - family-names: Caillon
+      given-names: Raphael
+  year: 2026
+  url: "https://github.com/Noptus/backtests-as-reward-signals/blob/main/output/pdf/backtests_as_reward_signals.pdf"

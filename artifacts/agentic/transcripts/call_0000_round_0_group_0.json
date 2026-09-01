@@ -1,0 +1,531 @@
+{
+  "prompt": "You are operating independent quantitative-research episodes.\nFor EACH episode, use only that episode's history and propose exactly\n4 NEW strategies intended to improve its reported feedback Sharpe.\nNever compare or transfer information across episode IDs. The feedback may be noisy.\n\nThe fixed strategy grammar is:\n- fast_window: 5, 10, 21, 42, or 63\n- slow_window: 21, 42, 63, 126, or 252, strictly greater than fast_window\n- mix: any number from -1 to 1; positive emphasizes fast momentum and negative fast reversal\n- top_k: 2, 3, 5, or 7 assets on each side\n- rebalance_days: 1, 5, 10, or 21\n- vol_window: 10, 21, 42, or 63\n- volatility_scale: true or false\n\nEvery proposal must be different from all strategies already present in its own history.\nIf an episode has no numeric feedback, use only its strategy history and favor diversity.\nGive a short economic hypothesis, but return only the required JSON object.\n\nEPISODES:\n[{\"episode_id\":\"Ecd686d28dd30\",\"history\":[{\"strategy\":{\"fast_window\":10,\"slow_window\":63,\"mix\":-0.658,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.35115},{\"strategy\":{\"fast_window\":5,\"slow_window\":252,\"mix\":0.435,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":63,\"volatility_scale\":true},\"feedback_sharpe\":0.326408},{\"strategy\":{\"fast_window\":10,\"slow_window\":42,\"mix\":-0.12,\"top_k\":5,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.193377},{\"strategy\":{\"fast_window\":63,\"slow_window\":252,\"mix\":-0.943,\"top_k\":5,\"rebalance_days\":10,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":0.288092},{\"strategy\":{\"fast_window\":42,\"slow_window\":252,\"mix\":0.621,\"top_k\":7,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.122095}]},{\"episode_id\":\"E45a86eb16fc6\",\"history\":[{\"strategy\":{\"fast_window\":21,\"slow_window\":252,\"mix\":-0.983,\"top_k\":7,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.486321},{\"strategy\":{\"fast_window\":42,\"slow_window\":126,\"mix\":-0.308,\"top_k\":3,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.583218},{\"strategy\":{\"fast_window\":10,\"slow_window\":126,\"mix\":0.891,\"top_k\":7,\"rebalance_days\":5,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":0.106585},{\"strategy\":{\"fast_window\":21,\"slow_window\":126,\"mix\":0.821,\"top_k\":5,\"rebalance_days\":10,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":-0.699581},{\"strategy\":{\"fast_window\":42,\"slow_window\":126,\"mix\":0.342,\"top_k\":5,\"rebalance_days\":10,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":-0.221791}]},{\"episode_id\":\"E0fc8072fd81a\",\"history\":[{\"strategy\":{\"fast_window\":21,\"slow_window\":252,\"mix\":0.089,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":0.262065},{\"strategy\":{\"fast_window\":5,\"slow_window\":21,\"mix\":-0.631,\"top_k\":2,\"rebalance_days\":21,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":-0.124206},{\"strategy\":{\"fast_window\":21,\"slow_window\":42,\"mix\":0.712,\"top_k\":2,\"rebalance_days\":5,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":-0.409637},{\"strategy\":{\"fast_window\":21,\"slow_window\":126,\"mix\":-0.431,\"top_k\":3,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.258774},{\"strategy\":{\"fast_window\":42,\"slow_window\":63,\"mix\":0.772,\"top_k\":2,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.134094}]},{\"episode_id\":\"Eca92104dac62\",\"history\":[{\"strategy\":{\"fast_window\":63,\"slow_window\":252,\"mix\":0.712,\"top_k\":7,\"rebalance_days\":21,\"vol_window\":63,\"volatility_scale\":true},\"feedback_sharpe\":0.358555},{\"strategy\":{\"fast_window\":5,\"slow_window\":126,\"mix\":0.073,\"top_k\":3,\"rebalance_days\":10,\"vol_window\":63,\"volatility_scale\":true},\"feedback_sharpe\":-0.332663},{\"strategy\":{\"fast_window\":63,\"slow_window\":126,\"mix\":-0.7,\"top_k\":5,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.187618},{\"strategy\":{\"fast_window\":5,\"slow_window\":21,\"mix\":-0.31,\"top_k\":2,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.896191},{\"strategy\":{\"fast_window\":5,\"slow_window\":21,\"mix\":0.042,\"top_k\":5,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.231561}]},{\"episode_id\":\"E9be6fca97dd8\",\"history\":[{\"strategy\":{\"fast_window\":10,\"slow_window\":126,\"mix\":-0.341,\"top_k\":5,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false}},{\"strategy\":{\"fast_window\":21,\"slow_window\":42,\"mix\":0.804,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":63,\"volatility_scale\":true}},{\"strategy\":{\"fast_window\":63,\"slow_window\":126,\"mix\":0.4,\"top_k\":5,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false}},{\"strategy\":{\"fast_window\":63,\"slow_window\":126,\"mix\":0.15,\"top_k\":7,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false}},{\"strategy\":{\"fast_window\":21,\"slow_window\":126,\"mix\":0.234,\"top_k\":7,\"rebalance_days\":5,\"vol_window\":10,\"volatility_scale\":true}}]},{\"episode_id\":\"Ed937305ee658\",\"history\":[{\"strategy\":{\"fast_window\":42,\"slow_window\":252,\"mix\":-0.178,\"top_k\":2,\"rebalance_days\":5,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.1},{\"strategy\":{\"fast_window\":10,\"slow_window\":126,\"mix\":-0.387,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":0.0},{\"strategy\":{\"fast_window\":10,\"slow_window\":42,\"mix\":0.691,\"top_k\":3,\"rebalance_days\":5,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.0},{\"strategy\":{\"fast_window\":10,\"slow_window\":21,\"mix\":-0.894,\"top_k\":2,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.0},{\"strategy\":{\"fast_window\":21,\"slow_window\":63,\"mix\":-0.618,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.0}]},{\"episode_id\":\"E5ca98451c105\",\"history\":[{\"strategy\":{\"fast_window\":5,\"slow_window\":42,\"mix\":-0.014,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":true},\"feedback_sharpe\":0.286078},{\"strategy\":{\"fast_window\":21,\"slow_window\":42,\"mix\":-0.74,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":-0.934841},{\"strategy\":{\"fast_window\":21,\"slow_window\":63,\"mix\":-0.541,\"top_k\":5,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.849095},{\"strategy\":{\"fast_window\":42,\"slow_window\":126,\"mix\":0.774,\"top_k\":2,\"rebalance_days\":1,\"vol_window\":63,\"volatility_scale\":true},\"feedback_sharpe\":0.231056},{\"strategy\":{\"fast_window\":10,\"slow_window\":126,\"mix\":0.389,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.25186}]},{\"episode_id\":\"E42add817af86\",\"history\":[{\"strategy\":{\"fast_window\":10,\"slow_window\":126,\"mix\":-0.121,\"top_k\":3,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":true},\"feedback_sharpe\":-0.034871},{\"strategy\":{\"fast_window\":5,\"slow_window\":21,\"mix\":0.749,\"top_k\":3,\"rebalance_days\":5,\"vol_window\":63,\"volatility_scale\":true},\"feedback_sharpe\":-0.343039},{\"strategy\":{\"fast_window\":42,\"slow_window\":126,\"mix\":-0.647,\"top_k\":2,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":true},\"feedback_sharpe\":-0.126723},{\"strategy\":{\"fast_window\":42,\"slow_window\":63,\"mix\":-0.842,\"top_k\":3,\"rebalance_days\":5,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":0.444398},{\"strategy\":{\"fast_window\":42,\"slow_window\":252,\"mix\":0.918,\"top_k\":5,\"rebalance_days\":5,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.15206}]},{\"episode_id\":\"E4b5bb4a626ec\",\"history\":[{\"strategy\":{\"fast_window\":63,\"slow_window\":252,\"mix\":0.016,\"top_k\":3,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":-0.3},{\"strategy\":{\"fast_window\":42,\"slow_window\":63,\"mix\":0.347,\"top_k\":5,\"rebalance_days\":21,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.9},{\"strategy\":{\"fast_window\":10,\"slow_window\":21,\"mix\":0.804,\"top_k\":5,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.9},{\"strategy\":{\"fast_window\":21,\"slow_window\":252,\"mix\":0.724,\"top_k\":3,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.9},{\"strategy\":{\"fast_window\":42,\"slow_window\":63,\"mix\":-0.074,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":42,\"volatility_scale\":true},\"feedback_sharpe\":0.9}]},{\"episode_id\":\"E236d70305663\",\"history\":[{\"strategy\":{\"fast_window\":21,\"slow_window\":252,\"mix\":0.63,\"top_k\":3,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.2},{\"strategy\":{\"fast_window\":10,\"slow_window\":42,\"mix\":-0.533,\"top_k\":2,\"rebalance_days\":5,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":0.2},{\"strategy\":{\"fast_window\":5,\"slow_window\":42,\"mix\":-0.428,\"top_k\":3,\"rebalance_days\":1,\"vol_window\":10,\"volatility_scale\":false},\"feedback_sharpe\":0.2},{\"strategy\":{\"fast_window\":42,\"slow_window\":63,\"mix\":-0.554,\"top_k\":7,\"rebalance_days\":10,\"vol_window\":10,\"volatility_scale\":true},\"feedback_sharpe\":0.2},{\"strategy\":{\"fast_window\":5,\"slow_window\":252,\"mix\":0.852,\"top_k\":3,\"rebalance_days\":21,\"vol_window\":21,\"volatility_scale\":true},\"feedback_sharpe\":0.2}]}]\n",
+  "command_model": "sonnet",
+  "returncode": 0,
+  "elapsed_seconds": 105.72615098953247,
+  "stderr": "",
+  "response": {
+    "is_error": false,
+    "duration_api_ms": 103510,
+    "num_turns": 3,
+    "stop_reason": "tool_use",
+    "session_id": "7f88fc5f-e160-40ca-9113-db1e01f93b95",
+    "total_cost_usd": 0.1248168,
+    "usage": {
+      "input_tokens": 3,
+      "cache_creation_input_tokens": 8768,
+      "cache_read_input_tokens": 24804,
+      "output_tokens": 8944,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 8768
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "claude-sonnet-5": {
+        "inputTokens": 4178,
+        "outputTokens": 8958,
+        "cacheReadInputTokens": 24804,
+        "cacheCreationInputTokens": 8768,
+        "webSearchRequests": 0,
+        "costUSD": 0.1248168,
+        "contextWindow": 200000,
+        "maxOutputTokens": 64000,
+        "canonicalModel": "claude-sonnet-5",
+        "provider": "firstParty"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "{\"proposals\":[{\"episode_id\":\"Ecd686d28dd30\",\"fast_window\":10,\"hypothesis\":\"Best Sharpe was reversal; strengthen negative mix with vol scaling on wider slow window.\",\"mix\":-0.75,\"rebalance_days\":21,\"slow_window\":126,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"Ecd686d28dd30\",\"fast_window\":21,\"hypothesis\":\"Medium-term reversal with vol scaling to exploit mean-reversion in liquid assets.\",\"mix\":-0.6,\"rebalance_days\":10,\"slow_window\":63,\"top_k\":3,\"vol_window\":10,\"volatility_scale\":true},{\"episode_id\":\"Ecd686d28dd30\",\"fast_window\":5,\"hypothesis\":\"Strong reversal on long slow window, concentrated book, sharp signal from short vol window.\",\"mix\":-0.8,\"rebalance_days\":21,\"slow_window\":126,\"top_k\":2,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"Ecd686d28dd30\",\"fast_window\":42,\"hypothesis\":\"Blend reversal at medium horizon with vol scaling to capture cross-sectional dispersion.\",\"mix\":-0.5,\"rebalance_days\":10,\"slow_window\":126,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E45a86eb16fc6\",\"fast_window\":21,\"hypothesis\":\"Best Sharpe was strong reversal on 252-day slow; replicate with vol scaling and mid-sized book.\",\"mix\":-0.9,\"rebalance_days\":1,\"slow_window\":252,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E45a86eb16fc6\",\"fast_window\":10,\"hypothesis\":\"Avoid 126-day slow window. Reversal on 252-day slow with more frequent rebalancing.\",\"mix\":-0.85,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"E45a86eb16fc6\",\"fast_window\":42,\"hypothesis\":\"Concentrated reversal on long-term trend; small book improves signal-to-noise.\",\"mix\":-0.95,\"rebalance_days\":1,\"slow_window\":252,\"top_k\":3,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"E45a86eb16fc6\",\"fast_window\":63,\"hypothesis\":\"Long-horizon reversal with vol scaling to manage tail risk, rebalancing weekly.\",\"mix\":-0.8,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E0fc8072fd81a\",\"fast_window\":21,\"hypothesis\":\"Best: long-horizon weak momentum with vol scaling; push to stronger momentum same horizon.\",\"mix\":0.5,\"rebalance_days\":10,\"slow_window\":252,\"top_k\":7,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E0fc8072fd81a\",\"fast_window\":21,\"hypothesis\":\"Medium-term reversal on 126-day slow with vol scaling for better drawdown control.\",\"mix\":-0.45,\"rebalance_days\":10,\"slow_window\":126,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E0fc8072fd81a\",\"fast_window\":21,\"hypothesis\":\"Slow 21/252 cross with mild positive mix; daily rebalance to capture momentum faster.\",\"mix\":0.3,\"rebalance_days\":1,\"slow_window\":252,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E0fc8072fd81a\",\"fast_window\":10,\"hypothesis\":\"Broad diversified reversal on medium horizon with short vol window for responsive sizing.\",\"mix\":-0.5,\"rebalance_days\":5,\"slow_window\":126,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":true},{\"episode_id\":\"Eca92104dac62\",\"fast_window\":42,\"hypothesis\":\"Best: long-horizon positive momentum, vol scaled, large book; try shorter fast window.\",\"mix\":0.75,\"rebalance_days\":21,\"slow_window\":252,\"top_k\":7,\"vol_window\":63,\"volatility_scale\":true},{\"episode_id\":\"Eca92104dac62\",\"fast_window\":63,\"hypothesis\":\"Strong momentum on long horizon worked; moderate book with weekly rebalance.\",\"mix\":0.6,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"Eca92104dac62\",\"fast_window\":21,\"hypothesis\":\"Extend moderate momentum to long slow window to avoid short-window noise.\",\"mix\":0.55,\"rebalance_days\":10,\"slow_window\":252,\"top_k\":7,\"vol_window\":63,\"volatility_scale\":true},{\"episode_id\":\"Eca92104dac62\",\"fast_window\":42,\"hypothesis\":\"Strong momentum on 126-day slow, small book, avoids short-window noise penalties.\",\"mix\":0.8,\"rebalance_days\":21,\"slow_window\":126,\"top_k\":3,\"vol_window\":63,\"volatility_scale\":true},{\"episode_id\":\"E9be6fca97dd8\",\"fast_window\":5,\"hypothesis\":\"No feedback; explore short-term momentum with vol scaling for diverse signal coverage.\",\"mix\":0.6,\"rebalance_days\":5,\"slow_window\":63,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E9be6fca97dd8\",\"fast_window\":10,\"hypothesis\":\"No feedback; reversal at medium horizon, concentrated book, contrasts momentum history.\",\"mix\":-0.7,\"rebalance_days\":10,\"slow_window\":42,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":false},{\"episode_id\":\"E9be6fca97dd8\",\"fast_window\":42,\"hypothesis\":\"No feedback; long-horizon reversal with vol scaling, unexplored in this episode.\",\"mix\":-0.6,\"rebalance_days\":21,\"slow_window\":252,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E9be6fca97dd8\",\"fast_window\":5,\"hypothesis\":\"No feedback; maximum window spread with neutral mix explores pure cross-sectional dispersion.\",\"mix\":0,\"rebalance_days\":1,\"slow_window\":252,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":true},{\"episode_id\":\"Ed937305ee658\",\"fast_window\":21,\"hypothesis\":\"All near-zero feedback; explore strong long-horizon momentum with vol scaling.\",\"mix\":0.8,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"Ed937305ee658\",\"fast_window\":42,\"hypothesis\":\"Near-zero feedback; try long-horizon reversal, large book, vol scaling for new region.\",\"mix\":-0.85,\"rebalance_days\":10,\"slow_window\":252,\"top_k\":7,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"Ed937305ee658\",\"fast_window\":5,\"hypothesis\":\"Degenerate feedback; concentrated short momentum, fast rebalance to probe high-frequency signal.\",\"mix\":0.9,\"rebalance_days\":1,\"slow_window\":42,\"top_k\":2,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"Ed937305ee658\",\"fast_window\":63,\"hypothesis\":\"Medium reversal with vol scaling; most existing attempts lacked vol scaling.\",\"mix\":-0.7,\"rebalance_days\":21,\"slow_window\":252,\"top_k\":3,\"vol_window\":63,\"volatility_scale\":true},{\"episode_id\":\"E5ca98451c105\",\"fast_window\":10,\"hypothesis\":\"Best performer: short momentum, vol scaling, broad book; slight wider fast window.\",\"mix\":0.1,\"rebalance_days\":10,\"slow_window\":42,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":true},{\"episode_id\":\"E5ca98451c105\",\"fast_window\":42,\"hypothesis\":\"Long-horizon mild momentum with vol scaling and concentrated book to reduce noise.\",\"mix\":0.6,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":2,\"vol_window\":63,\"volatility_scale\":true},{\"episode_id\":\"E5ca98451c105\",\"fast_window\":63,\"hypothesis\":\"Strong reversal caused big losses; try positive momentum 63/252 with vol scaling.\",\"mix\":0.7,\"rebalance_days\":5,\"slow_window\":252,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E5ca98451c105\",\"fast_window\":21,\"hypothesis\":\"Mild positive mix, medium horizon, vol scaling, moderate top_k for balance.\",\"mix\":0.3,\"rebalance_days\":10,\"slow_window\":126,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E42add817af86\",\"fast_window\":42,\"hypothesis\":\"Best: medium reversal with vol scaling; push reversal harder with broader book.\",\"mix\":-0.95,\"rebalance_days\":5,\"slow_window\":63,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E42add817af86\",\"fast_window\":42,\"hypothesis\":\"Reversal at 42/63 worked; explore same signal on longer slow window for persistence.\",\"mix\":-0.8,\"rebalance_days\":10,\"slow_window\":126,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E42add817af86\",\"fast_window\":42,\"hypothesis\":\"Reversal winner used vol_window=42; try daily rebalance for more responsive capture.\",\"mix\":-0.85,\"rebalance_days\":1,\"slow_window\":63,\"top_k\":2,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E42add817af86\",\"fast_window\":21,\"hypothesis\":\"Shorter fast window, reversal on medium slow, vol scaling extends thesis to faster signal.\",\"mix\":-0.75,\"rebalance_days\":5,\"slow_window\":63,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E4b5bb4a626ec\",\"fast_window\":10,\"hypothesis\":\"Three strategies hit 0.9; reinforce 10/21 momentum with broader book.\",\"mix\":0.75,\"rebalance_days\":10,\"slow_window\":21,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"E4b5bb4a626ec\",\"fast_window\":42,\"hypothesis\":\"42/63 momentum works at 0.9; add vol scaling to stabilize and push Sharpe higher.\",\"mix\":0.4,\"rebalance_days\":5,\"slow_window\":63,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E4b5bb4a626ec\",\"fast_window\":21,\"hypothesis\":\"Momentum at 21/252 at 0.9; daily rebalance, concentrated book for purer signal.\",\"mix\":0.8,\"rebalance_days\":1,\"slow_window\":252,\"top_k\":2,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"E4b5bb4a626ec\",\"fast_window\":10,\"hypothesis\":\"Short momentum with vol scaling on slightly longer slow window for trend and risk balance.\",\"mix\":0.65,\"rebalance_days\":5,\"slow_window\":42,\"top_k\":5,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E236d70305663\",\"fast_window\":63,\"hypothesis\":\"All strategies at 0.2; explore long-horizon strong momentum with vol scaling.\",\"mix\":0.8,\"rebalance_days\":10,\"slow_window\":252,\"top_k\":5,\"vol_window\":42,\"volatility_scale\":true},{\"episode_id\":\"E236d70305663\",\"fast_window\":10,\"hypothesis\":\"Flat feedback; short reversal with vol scaling and concentrated book probes mean-reversion.\",\"mix\":-0.7,\"rebalance_days\":5,\"slow_window\":63,\"top_k\":3,\"vol_window\":21,\"volatility_scale\":true},{\"episode_id\":\"E236d70305663\",\"fast_window\":5,\"hypothesis\":\"Flat feedback; fast momentum with daily rebalance to detect high-frequency trend signal.\",\"mix\":0.9,\"rebalance_days\":1,\"slow_window\":21,\"top_k\":7,\"vol_window\":10,\"volatility_scale\":false},{\"episode_id\":\"E236d70305663\",\"fast_window\":21,\"hypothesis\":\"Flat feedback; medium reversal on 21/126 with vol scaling and broad book, untested here.\",\"mix\":-0.6,\"rebalance_days\":21,\"slow_window\":126,\"top_k\":7,\"vol_window\":63,\"volatility_scale\":true}]}",
+    "structured_output": {
+      "proposals": [
+        {
+          "episode_id": "Ecd686d28dd30",
+          "fast_window": 10,
+          "hypothesis": "Best Sharpe was reversal; strengthen negative mix with vol scaling on wider slow window.",
+          "mix": -0.75,
+          "rebalance_days": 21,
+          "slow_window": 126,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Ecd686d28dd30",
+          "fast_window": 21,
+          "hypothesis": "Medium-term reversal with vol scaling to exploit mean-reversion in liquid assets.",
+          "mix": -0.6,
+          "rebalance_days": 10,
+          "slow_window": 63,
+          "top_k": 3,
+          "vol_window": 10,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Ecd686d28dd30",
+          "fast_window": 5,
+          "hypothesis": "Strong reversal on long slow window, concentrated book, sharp signal from short vol window.",
+          "mix": -0.8,
+          "rebalance_days": 21,
+          "slow_window": 126,
+          "top_k": 2,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "Ecd686d28dd30",
+          "fast_window": 42,
+          "hypothesis": "Blend reversal at medium horizon with vol scaling to capture cross-sectional dispersion.",
+          "mix": -0.5,
+          "rebalance_days": 10,
+          "slow_window": 126,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E45a86eb16fc6",
+          "fast_window": 21,
+          "hypothesis": "Best Sharpe was strong reversal on 252-day slow; replicate with vol scaling and mid-sized book.",
+          "mix": -0.9,
+          "rebalance_days": 1,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E45a86eb16fc6",
+          "fast_window": 10,
+          "hypothesis": "Avoid 126-day slow window. Reversal on 252-day slow with more frequent rebalancing.",
+          "mix": -0.85,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E45a86eb16fc6",
+          "fast_window": 42,
+          "hypothesis": "Concentrated reversal on long-term trend; small book improves signal-to-noise.",
+          "mix": -0.95,
+          "rebalance_days": 1,
+          "slow_window": 252,
+          "top_k": 3,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E45a86eb16fc6",
+          "fast_window": 63,
+          "hypothesis": "Long-horizon reversal with vol scaling to manage tail risk, rebalancing weekly.",
+          "mix": -0.8,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E0fc8072fd81a",
+          "fast_window": 21,
+          "hypothesis": "Best: long-horizon weak momentum with vol scaling; push to stronger momentum same horizon.",
+          "mix": 0.5,
+          "rebalance_days": 10,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E0fc8072fd81a",
+          "fast_window": 21,
+          "hypothesis": "Medium-term reversal on 126-day slow with vol scaling for better drawdown control.",
+          "mix": -0.45,
+          "rebalance_days": 10,
+          "slow_window": 126,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E0fc8072fd81a",
+          "fast_window": 21,
+          "hypothesis": "Slow 21/252 cross with mild positive mix; daily rebalance to capture momentum faster.",
+          "mix": 0.3,
+          "rebalance_days": 1,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E0fc8072fd81a",
+          "fast_window": 10,
+          "hypothesis": "Broad diversified reversal on medium horizon with short vol window for responsive sizing.",
+          "mix": -0.5,
+          "rebalance_days": 5,
+          "slow_window": 126,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Eca92104dac62",
+          "fast_window": 42,
+          "hypothesis": "Best: long-horizon positive momentum, vol scaled, large book; try shorter fast window.",
+          "mix": 0.75,
+          "rebalance_days": 21,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 63,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Eca92104dac62",
+          "fast_window": 63,
+          "hypothesis": "Strong momentum on long horizon worked; moderate book with weekly rebalance.",
+          "mix": 0.6,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Eca92104dac62",
+          "fast_window": 21,
+          "hypothesis": "Extend moderate momentum to long slow window to avoid short-window noise.",
+          "mix": 0.55,
+          "rebalance_days": 10,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 63,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Eca92104dac62",
+          "fast_window": 42,
+          "hypothesis": "Strong momentum on 126-day slow, small book, avoids short-window noise penalties.",
+          "mix": 0.8,
+          "rebalance_days": 21,
+          "slow_window": 126,
+          "top_k": 3,
+          "vol_window": 63,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E9be6fca97dd8",
+          "fast_window": 5,
+          "hypothesis": "No feedback; explore short-term momentum with vol scaling for diverse signal coverage.",
+          "mix": 0.6,
+          "rebalance_days": 5,
+          "slow_window": 63,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E9be6fca97dd8",
+          "fast_window": 10,
+          "hypothesis": "No feedback; reversal at medium horizon, concentrated book, contrasts momentum history.",
+          "mix": -0.7,
+          "rebalance_days": 10,
+          "slow_window": 42,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E9be6fca97dd8",
+          "fast_window": 42,
+          "hypothesis": "No feedback; long-horizon reversal with vol scaling, unexplored in this episode.",
+          "mix": -0.6,
+          "rebalance_days": 21,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E9be6fca97dd8",
+          "fast_window": 5,
+          "hypothesis": "No feedback; maximum window spread with neutral mix explores pure cross-sectional dispersion.",
+          "mix": 0,
+          "rebalance_days": 1,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Ed937305ee658",
+          "fast_window": 21,
+          "hypothesis": "All near-zero feedback; explore strong long-horizon momentum with vol scaling.",
+          "mix": 0.8,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Ed937305ee658",
+          "fast_window": 42,
+          "hypothesis": "Near-zero feedback; try long-horizon reversal, large book, vol scaling for new region.",
+          "mix": -0.85,
+          "rebalance_days": 10,
+          "slow_window": 252,
+          "top_k": 7,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "Ed937305ee658",
+          "fast_window": 5,
+          "hypothesis": "Degenerate feedback; concentrated short momentum, fast rebalance to probe high-frequency signal.",
+          "mix": 0.9,
+          "rebalance_days": 1,
+          "slow_window": 42,
+          "top_k": 2,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "Ed937305ee658",
+          "fast_window": 63,
+          "hypothesis": "Medium reversal with vol scaling; most existing attempts lacked vol scaling.",
+          "mix": -0.7,
+          "rebalance_days": 21,
+          "slow_window": 252,
+          "top_k": 3,
+          "vol_window": 63,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E5ca98451c105",
+          "fast_window": 10,
+          "hypothesis": "Best performer: short momentum, vol scaling, broad book; slight wider fast window.",
+          "mix": 0.1,
+          "rebalance_days": 10,
+          "slow_window": 42,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E5ca98451c105",
+          "fast_window": 42,
+          "hypothesis": "Long-horizon mild momentum with vol scaling and concentrated book to reduce noise.",
+          "mix": 0.6,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 2,
+          "vol_window": 63,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E5ca98451c105",
+          "fast_window": 63,
+          "hypothesis": "Strong reversal caused big losses; try positive momentum 63/252 with vol scaling.",
+          "mix": 0.7,
+          "rebalance_days": 5,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E5ca98451c105",
+          "fast_window": 21,
+          "hypothesis": "Mild positive mix, medium horizon, vol scaling, moderate top_k for balance.",
+          "mix": 0.3,
+          "rebalance_days": 10,
+          "slow_window": 126,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E42add817af86",
+          "fast_window": 42,
+          "hypothesis": "Best: medium reversal with vol scaling; push reversal harder with broader book.",
+          "mix": -0.95,
+          "rebalance_days": 5,
+          "slow_window": 63,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E42add817af86",
+          "fast_window": 42,
+          "hypothesis": "Reversal at 42/63 worked; explore same signal on longer slow window for persistence.",
+          "mix": -0.8,
+          "rebalance_days": 10,
+          "slow_window": 126,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E42add817af86",
+          "fast_window": 42,
+          "hypothesis": "Reversal winner used vol_window=42; try daily rebalance for more responsive capture.",
+          "mix": -0.85,
+          "rebalance_days": 1,
+          "slow_window": 63,
+          "top_k": 2,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E42add817af86",
+          "fast_window": 21,
+          "hypothesis": "Shorter fast window, reversal on medium slow, vol scaling extends thesis to faster signal.",
+          "mix": -0.75,
+          "rebalance_days": 5,
+          "slow_window": 63,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E4b5bb4a626ec",
+          "fast_window": 10,
+          "hypothesis": "Three strategies hit 0.9; reinforce 10/21 momentum with broader book.",
+          "mix": 0.75,
+          "rebalance_days": 10,
+          "slow_window": 21,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E4b5bb4a626ec",
+          "fast_window": 42,
+          "hypothesis": "42/63 momentum works at 0.9; add vol scaling to stabilize and push Sharpe higher.",
+          "mix": 0.4,
+          "rebalance_days": 5,
+          "slow_window": 63,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E4b5bb4a626ec",
+          "fast_window": 21,
+          "hypothesis": "Momentum at 21/252 at 0.9; daily rebalance, concentrated book for purer signal.",
+          "mix": 0.8,
+          "rebalance_days": 1,
+          "slow_window": 252,
+          "top_k": 2,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E4b5bb4a626ec",
+          "fast_window": 10,
+          "hypothesis": "Short momentum with vol scaling on slightly longer slow window for trend and risk balance.",
+          "mix": 0.65,
+          "rebalance_days": 5,
+          "slow_window": 42,
+          "top_k": 5,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E236d70305663",
+          "fast_window": 63,
+          "hypothesis": "All strategies at 0.2; explore long-horizon strong momentum with vol scaling.",
+          "mix": 0.8,
+          "rebalance_days": 10,
+          "slow_window": 252,
+          "top_k": 5,
+          "vol_window": 42,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E236d70305663",
+          "fast_window": 10,
+          "hypothesis": "Flat feedback; short reversal with vol scaling and concentrated book probes mean-reversion.",
+          "mix": -0.7,
+          "rebalance_days": 5,
+          "slow_window": 63,
+          "top_k": 3,
+          "vol_window": 21,
+          "volatility_scale": true
+        },
+        {
+          "episode_id": "E236d70305663",
+          "fast_window": 5,
+          "hypothesis": "Flat feedback; fast momentum with daily rebalance to detect high-frequency trend signal.",
+          "mix": 0.9,
+          "rebalance_days": 1,
+          "slow_window": 21,
+          "top_k": 7,
+          "vol_window": 10,
+          "volatility_scale": false
+        },
+        {
+          "episode_id": "E236d70305663",
+          "fast_window": 21,
+          "hypothesis": "Flat feedback; medium reversal on 21/126 with vol scaling and broad book, untested here.",
+          "mix": -0.6,
+          "rebalance_days": 21,
+          "slow_window": 126,
+          "top_k": 7,
+          "vol_window": 63,
+          "volatility_scale": true
+        }
+      ]
+    },
+    "ttft_ms": 58685,
+    "ttft_stream_ms": 58683,
+    "time_to_request_ms": 24,
+    "type": "result",
+    "duration_ms": 101071,
+    "uuid": "78d4974a-e411-484b-a82a-c88bf93e18c4"
+  }
+}

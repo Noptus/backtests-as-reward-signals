@@ -1,0 +1,2902 @@
+{
+  "model_alias": "sonnet",
+  "claude_path": "/Users/raphaelcaillon/bin/claude",
+  "calls": [
+    {
+      "call_index": 0,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1248168,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4178,
+          "outputTokens": 8958,
+          "cacheReadInputTokens": 24804,
+          "cacheCreationInputTokens": 8768,
+          "webSearchRequests": 0,
+          "costUSD": 0.1248168,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0000_round_0_group_0.json"
+    },
+    {
+      "call_index": 1,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.06051139999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4096,
+          "outputTokens": 5012,
+          "cacheReadInputTokens": 10997,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.06051139999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0001_round_0_group_1.json"
+    },
+    {
+      "call_index": 2,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1344013,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4095,
+          "outputTokens": 8988,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12897,
+          "webSearchRequests": 0,
+          "costUSD": 0.1344013,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0002_round_0_group_2.json"
+    },
+    {
+      "call_index": 3,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.13672280000000003,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4067,
+          "outputTokens": 9228,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12888,
+          "webSearchRequests": 0,
+          "costUSD": 0.13672280000000003,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0003_round_0_group_3.json"
+    },
+    {
+      "call_index": 4,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.14557530000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6552,
+          "outputTokens": 8389,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17797,
+          "webSearchRequests": 0,
+          "costUSD": 0.14557530000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0004_round_1_group_0.json"
+    },
+    {
+      "call_index": 5,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1554483,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6396,
+          "outputTokens": 9433,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17695,
+          "webSearchRequests": 0,
+          "costUSD": 0.1554483,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0005_round_1_group_1.json"
+    },
+    {
+      "call_index": 6,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1387717,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6398,
+          "outputTokens": 9459,
+          "cacheReadInputTokens": 20016,
+          "cacheCreationInputTokens": 10953,
+          "webSearchRequests": 0,
+          "costUSD": 0.1387717,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0006_round_1_group_2.json"
+    },
+    {
+      "call_index": 7,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.08052459999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6343,
+          "outputTokens": 5018,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6526,
+          "webSearchRequests": 0,
+          "costUSD": 0.08052459999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0007_round_1_group_3.json"
+    },
+    {
+      "call_index": 8,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1767633,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8926,
+          "outputTokens": 9711,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 23085,
+          "webSearchRequests": 0,
+          "costUSD": 0.1767633,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0008_round_2_group_0.json"
+    },
+    {
+      "call_index": 9,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.09017410000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8694,
+          "outputTokens": 4925,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 8877,
+          "webSearchRequests": 0,
+          "costUSD": 0.09017410000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0009_round_2_group_1.json"
+    },
+    {
+      "call_index": 10,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1786483,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8701,
+          "outputTokens": 9995,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22883,
+          "webSearchRequests": 0,
+          "costUSD": 0.1786483,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0010_round_2_group_2.json"
+    },
+    {
+      "call_index": 11,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0947856,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8621,
+          "outputTokens": 5419,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 8804,
+          "webSearchRequests": 0,
+          "costUSD": 0.0947856,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0011_round_2_group_3.json"
+    },
+    {
+      "call_index": 12,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.16904989999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11304,
+          "outputTokens": 9957,
+          "cacheReadInputTokens": 24922,
+          "cacheCreationInputTokens": 16755,
+          "webSearchRequests": 0,
+          "costUSD": 0.16904989999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0012_round_3_group_0.json"
+    },
+    {
+      "call_index": 13,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1944343,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10994,
+          "outputTokens": 9991,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27379,
+          "webSearchRequests": 0,
+          "costUSD": 0.1944343,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0013_round_3_group_1.json"
+    },
+    {
+      "call_index": 14,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1034956,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11001,
+          "outputTokens": 5219,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11184,
+          "webSearchRequests": 0,
+          "costUSD": 0.1034956,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0014_round_3_group_2.json"
+    },
+    {
+      "call_index": 15,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.19391580000000003,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10906,
+          "outputTokens": 9875,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27706,
+          "webSearchRequests": 0,
+          "costUSD": 0.19391580000000003,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0015_round_3_group_3.json"
+    },
+    {
+      "call_index": 16,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2034918,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13679,
+          "outputTokens": 9102,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32410,
+          "webSearchRequests": 0,
+          "costUSD": 0.2034918,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0016_round_4_group_0.json"
+    },
+    {
+      "call_index": 17,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2032768,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13294,
+          "outputTokens": 9364,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31584,
+          "webSearchRequests": 0,
+          "costUSD": 0.2032768,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0017_round_4_group_1.json"
+    },
+    {
+      "call_index": 18,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2030308,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13301,
+          "outputTokens": 9415,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31276,
+          "webSearchRequests": 0,
+          "costUSD": 0.2030308,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0018_round_4_group_2.json"
+    },
+    {
+      "call_index": 19,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.11384160000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13189,
+          "outputTokens": 5269,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13372,
+          "webSearchRequests": 0,
+          "costUSD": 0.11384160000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0019_round_4_group_3.json"
+    },
+    {
+      "call_index": 20,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1298703,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4082,
+          "outputTokens": 8583,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12715,
+          "webSearchRequests": 0,
+          "costUSD": 0.1298703,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0020_round_0_group_0.json"
+    },
+    {
+      "call_index": 21,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1365463,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4140,
+          "outputTokens": 9168,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12999,
+          "webSearchRequests": 0,
+          "costUSD": 0.1365463,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0021_round_0_group_1.json"
+    },
+    {
+      "call_index": 22,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1374398,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4083,
+          "outputTokens": 9287,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12926,
+          "webSearchRequests": 0,
+          "costUSD": 0.1374398,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0022_round_0_group_2.json"
+    },
+    {
+      "call_index": 23,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.13757629999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4125,
+          "outputTokens": 9295,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12915,
+          "webSearchRequests": 0,
+          "costUSD": 0.13757629999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0023_round_0_group_3.json"
+    },
+    {
+      "call_index": 24,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.15510780000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6382,
+          "outputTokens": 9226,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 18398,
+          "webSearchRequests": 0,
+          "costUSD": 0.15510780000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0024_round_1_group_0.json"
+    },
+    {
+      "call_index": 25,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.14983629999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6475,
+          "outputTokens": 8792,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17951,
+          "webSearchRequests": 0,
+          "costUSD": 0.14983629999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0025_round_1_group_1.json"
+    },
+    {
+      "call_index": 26,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1567958,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6391,
+          "outputTokens": 9536,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17826,
+          "webSearchRequests": 0,
+          "costUSD": 0.1567958,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0026_round_1_group_2.json"
+    },
+    {
+      "call_index": 27,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.08233859999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6455,
+          "outputTokens": 5149,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6638,
+          "webSearchRequests": 0,
+          "costUSD": 0.08233859999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0027_round_1_group_3.json"
+    },
+    {
+      "call_index": 28,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.16941230000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8678,
+          "outputTokens": 9275,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22087,
+          "webSearchRequests": 0,
+          "costUSD": 0.16941230000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0028_round_2_group_0.json"
+    },
+    {
+      "call_index": 29,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1688018,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8809,
+          "outputTokens": 9050,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22638,
+          "webSearchRequests": 0,
+          "costUSD": 0.1688018,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0029_round_2_group_1.json"
+    },
+    {
+      "call_index": 30,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1661733,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8696,
+          "outputTokens": 8926,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22173,
+          "webSearchRequests": 0,
+          "costUSD": 0.1661733,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0030_round_2_group_2.json"
+    },
+    {
+      "call_index": 31,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.14471,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8787,
+          "outputTokens": 8909,
+          "cacheReadInputTokens": 22405,
+          "cacheCreationInputTokens": 13426,
+          "webSearchRequests": 0,
+          "costUSD": 0.14471,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0031_round_2_group_3.json"
+    },
+    {
+      "call_index": 32,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.10454959999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10973,
+          "outputTokens": 5337,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11156,
+          "webSearchRequests": 0,
+          "costUSD": 0.10454959999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0032_round_3_group_0.json"
+    },
+    {
+      "call_index": 33,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1910098,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11143,
+          "outputTokens": 9528,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27742,
+          "webSearchRequests": 0,
+          "costUSD": 0.1910098,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0033_round_3_group_1.json"
+    },
+    {
+      "call_index": 34,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1083627,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11000,
+          "outputTokens": 5566,
+          "cacheReadInputTokens": 13726,
+          "cacheCreationInputTokens": 11183,
+          "webSearchRequests": 0,
+          "costUSD": 0.1083627,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0034_round_3_group_2.json"
+    },
+    {
+      "call_index": 35,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1826833,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11116,
+          "outputTokens": 8890,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 26985,
+          "webSearchRequests": 0,
+          "costUSD": 0.1826833,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0035_round_3_group_3.json"
+    },
+    {
+      "call_index": 36,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2073893,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13274,
+          "outputTokens": 9691,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31937,
+          "webSearchRequests": 0,
+          "costUSD": 0.2073893,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0036_round_4_group_0.json"
+    },
+    {
+      "call_index": 37,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1122241,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13474,
+          "outputTokens": 4979,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13657,
+          "webSearchRequests": 0,
+          "costUSD": 0.1122241,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0037_round_4_group_1.json"
+    },
+    {
+      "call_index": 38,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2119273,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13308,
+          "outputTokens": 9915,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32829,
+          "webSearchRequests": 0,
+          "costUSD": 0.2119273,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0038_round_4_group_2.json"
+    },
+    {
+      "call_index": 39,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.21170080000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13446,
+          "outputTokens": 9919,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32612,
+          "webSearchRequests": 0,
+          "costUSD": 0.21170080000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0039_round_4_group_3.json"
+    },
+    {
+      "call_index": 40,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1190898,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4146,
+          "outputTokens": 8592,
+          "cacheReadInputTokens": 17764,
+          "cacheCreationInputTokens": 8530,
+          "webSearchRequests": 0,
+          "costUSD": 0.1190898,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0040_round_0_group_0.json"
+    },
+    {
+      "call_index": 41,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0705106,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4151,
+          "outputTokens": 5003,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4334,
+          "webSearchRequests": 0,
+          "costUSD": 0.0705106,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0041_round_0_group_1.json"
+    },
+    {
+      "call_index": 42,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0683136,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4145,
+          "outputTokens": 4786,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4328,
+          "webSearchRequests": 0,
+          "costUSD": 0.0683136,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0042_round_0_group_2.json"
+    },
+    {
+      "call_index": 43,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0689891,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4024,
+          "outputTokens": 4908,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4207,
+          "webSearchRequests": 0,
+          "costUSD": 0.0689891,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0043_round_0_group_3.json"
+    },
+    {
+      "call_index": 44,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1602058,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6491,
+          "outputTokens": 9742,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 18286,
+          "webSearchRequests": 0,
+          "costUSD": 0.1602058,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0044_round_1_group_0.json"
+    },
+    {
+      "call_index": 45,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.15170680000000003,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6494,
+          "outputTokens": 8888,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 18300,
+          "webSearchRequests": 0,
+          "costUSD": 0.15170680000000003,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0045_round_1_group_1.json"
+    },
+    {
+      "call_index": 46,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1304876,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6495,
+          "outputTokens": 8613,
+          "cacheReadInputTokens": 20113,
+          "cacheCreationInputTokens": 10938,
+          "webSearchRequests": 0,
+          "costUSD": 0.1304876,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0046_round_1_group_2.json"
+    },
+    {
+      "call_index": 47,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.08042510000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6272,
+          "outputTokens": 5040,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6455,
+          "webSearchRequests": 0,
+          "costUSD": 0.08042510000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0047_round_1_group_3.json"
+    },
+    {
+      "call_index": 48,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1554986,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8825,
+          "outputTokens": 9918,
+          "cacheReadInputTokens": 22443,
+          "cacheCreationInputTokens": 13672,
+          "webSearchRequests": 0,
+          "costUSD": 0.1554986,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0048_round_2_group_0.json"
+    },
+    {
+      "call_index": 49,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.17325729999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8833,
+          "outputTokens": 9546,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22417,
+          "webSearchRequests": 0,
+          "costUSD": 0.17325729999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0049_round_2_group_1.json"
+    },
+    {
+      "call_index": 50,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.09349309999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8836,
+          "outputTokens": 5193,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 9019,
+          "webSearchRequests": 0,
+          "costUSD": 0.09349309999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0050_round_2_group_2.json"
+    },
+    {
+      "call_index": 51,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.17007679999999997,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8529,
+          "outputTokens": 9446,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 21788,
+          "webSearchRequests": 0,
+          "costUSD": 0.17007679999999997,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0051_round_2_group_3.json"
+    },
+    {
+      "call_index": 52,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1052956,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11161,
+          "outputTokens": 5327,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11344,
+          "webSearchRequests": 0,
+          "costUSD": 0.1052956,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0052_round_3_group_0.json"
+    },
+    {
+      "call_index": 53,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.10414060000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11171,
+          "outputTokens": 5207,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11354,
+          "webSearchRequests": 0,
+          "costUSD": 0.10414060000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0053_round_3_group_1.json"
+    },
+    {
+      "call_index": 54,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.18861129999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11175,
+          "outputTokens": 9259,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27833,
+          "webSearchRequests": 0,
+          "costUSD": 0.18861129999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0054_round_3_group_2.json"
+    },
+    {
+      "call_index": 55,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1012766,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10779,
+          "outputTokens": 5097,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 10962,
+          "webSearchRequests": 0,
+          "costUSD": 0.1012766,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0055_round_3_group_3.json"
+    },
+    {
+      "call_index": 56,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2196068,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13494,
+          "outputTokens": 10719,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32536,
+          "webSearchRequests": 0,
+          "costUSD": 0.2196068,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0056_round_4_group_0.json"
+    },
+    {
+      "call_index": 57,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1147926,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13507,
+          "outputTokens": 5221,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13690,
+          "webSearchRequests": 0,
+          "costUSD": 0.1147926,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0057_round_4_group_1.json"
+    },
+    {
+      "call_index": 58,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.21024980000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13508,
+          "outputTokens": 9878,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32146,
+          "webSearchRequests": 0,
+          "costUSD": 0.21024980000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0058_round_4_group_2.json"
+    },
+    {
+      "call_index": 59,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1138516,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13029,
+          "outputTokens": 5342,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13212,
+          "webSearchRequests": 0,
+          "costUSD": 0.1138516,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0059_round_4_group_3.json"
+    },
+    {
+      "call_index": 60,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1255497,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4188,
+          "outputTokens": 9203,
+          "cacheReadInputTokens": 17806,
+          "cacheCreationInputTokens": 8633,
+          "webSearchRequests": 0,
+          "costUSD": 0.1255497,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0060_round_0_group_0.json"
+    },
+    {
+      "call_index": 61,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0692351,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4032,
+          "outputTokens": 4929,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4215,
+          "webSearchRequests": 0,
+          "costUSD": 0.0692351,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0061_round_0_group_1.json"
+    },
+    {
+      "call_index": 62,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.07203810000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4146,
+          "outputTokens": 5158,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4329,
+          "webSearchRequests": 0,
+          "costUSD": 0.07203810000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0062_round_0_group_2.json"
+    },
+    {
+      "call_index": 63,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.07054709999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4088,
+          "outputTokens": 5035,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4271,
+          "webSearchRequests": 0,
+          "costUSD": 0.07054709999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0063_round_0_group_3.json"
+    },
+    {
+      "call_index": 64,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1553208,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6571,
+          "outputTokens": 9338,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17884,
+          "webSearchRequests": 0,
+          "costUSD": 0.1553208,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0064_round_1_group_0.json"
+    },
+    {
+      "call_index": 65,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.14827829999999997,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6291,
+          "outputTokens": 8823,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17351,
+          "webSearchRequests": 0,
+          "costUSD": 0.14827829999999997,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0065_round_1_group_1.json"
+    },
+    {
+      "call_index": 66,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1489663,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6495,
+          "outputTokens": 8758,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17723,
+          "webSearchRequests": 0,
+          "costUSD": 0.1489663,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0066_round_1_group_2.json"
+    },
+    {
+      "call_index": 67,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1520718,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6379,
+          "outputTokens": 9177,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17382,
+          "webSearchRequests": 0,
+          "costUSD": 0.1520718,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0067_round_1_group_3.json"
+    },
+    {
+      "call_index": 68,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0947371,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8948,
+          "outputTokens": 5267,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 9131,
+          "webSearchRequests": 0,
+          "costUSD": 0.0947371,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0068_round_2_group_0.json"
+    },
+    {
+      "call_index": 69,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1662093,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8549,
+          "outputTokens": 8995,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22029,
+          "webSearchRequests": 0,
+          "costUSD": 0.1662093,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0069_round_2_group_1.json"
+    },
+    {
+      "call_index": 70,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1713043,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8844,
+          "outputTokens": 9340,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22451,
+          "webSearchRequests": 0,
+          "costUSD": 0.1713043,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0070_round_2_group_2.json"
+    },
+    {
+      "call_index": 71,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1424016,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8665,
+          "outputTokens": 8766,
+          "cacheReadInputTokens": 22283,
+          "cacheCreationInputTokens": 13182,
+          "webSearchRequests": 0,
+          "costUSD": 0.1424016,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0071_round_2_group_3.json"
+    },
+    {
+      "call_index": 72,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.19639979999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11328,
+          "outputTokens": 9887,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 28314,
+          "webSearchRequests": 0,
+          "costUSD": 0.19639979999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0072_round_3_group_0.json"
+    },
+    {
+      "call_index": 73,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1750523,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10808,
+          "outputTokens": 8407,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 26111,
+          "webSearchRequests": 0,
+          "costUSD": 0.1750523,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0073_round_3_group_1.json"
+    },
+    {
+      "call_index": 74,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1653835,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11192,
+          "outputTokens": 9750,
+          "cacheReadInputTokens": 24810,
+          "cacheCreationInputTokens": 16215,
+          "webSearchRequests": 0,
+          "costUSD": 0.1653835,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0074_round_3_group_2.json"
+    },
+    {
+      "call_index": 75,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1929448,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10953,
+          "outputTokens": 9919,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27104,
+          "webSearchRequests": 0,
+          "costUSD": 0.1929448,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0075_round_3_group_3.json"
+    },
+    {
+      "call_index": 76,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2150878,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13707,
+          "outputTokens": 10094,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 33058,
+          "webSearchRequests": 0,
+          "costUSD": 0.2150878,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0076_round_4_group_0.json"
+    },
+    {
+      "call_index": 77,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1625369,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13064,
+          "outputTokens": 8719,
+          "cacheReadInputTokens": 26682,
+          "cacheCreationInputTokens": 17553,
+          "webSearchRequests": 0,
+          "costUSD": 0.1625369,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0077_round_4_group_1.json"
+    },
+    {
+      "call_index": 78,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.20343480000000003,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13543,
+          "outputTokens": 9232,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31976,
+          "webSearchRequests": 0,
+          "costUSD": 0.20343480000000003,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0078_round_4_group_2.json"
+    },
+    {
+      "call_index": 79,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1191956,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13241,
+          "outputTokens": 5781,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13424,
+          "webSearchRequests": 0,
+          "costUSD": 0.1191956,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0079_round_4_group_3.json"
+    },
+    {
+      "call_index": 80,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1398183,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4206,
+          "outputTokens": 9320,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 13647,
+          "webSearchRequests": 0,
+          "costUSD": 0.1398183,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0080_round_0_group_0.json"
+    },
+    {
+      "call_index": 81,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1337543,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4039,
+          "outputTokens": 9009,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12599,
+          "webSearchRequests": 0,
+          "costUSD": 0.1337543,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0081_round_0_group_1.json"
+    },
+    {
+      "call_index": 82,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.06924609999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4110,
+          "outputTokens": 4895,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4293,
+          "webSearchRequests": 0,
+          "costUSD": 0.06924609999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0082_round_0_group_2.json"
+    },
+    {
+      "call_index": 83,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1361793,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4084,
+          "outputTokens": 9201,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12765,
+          "webSearchRequests": 0,
+          "costUSD": 0.1361793,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0083_round_0_group_3.json"
+    },
+    {
+      "call_index": 84,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0839556,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6601,
+          "outputTokens": 5245,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6784,
+          "webSearchRequests": 0,
+          "costUSD": 0.0839556,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0084_round_1_group_0.json"
+    },
+    {
+      "call_index": 85,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1528268,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6304,
+          "outputTokens": 9263,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17400,
+          "webSearchRequests": 0,
+          "costUSD": 0.1528268,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0085_round_1_group_1.json"
+    },
+    {
+      "call_index": 86,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.15485580000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6441,
+          "outputTokens": 9367,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17686,
+          "webSearchRequests": 0,
+          "costUSD": 0.15485580000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0086_round_1_group_2.json"
+    },
+    {
+      "call_index": 87,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1544608,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6381,
+          "outputTokens": 9358,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17612,
+          "webSearchRequests": 0,
+          "costUSD": 0.1544608,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0087_round_1_group_3.json"
+    },
+    {
+      "call_index": 88,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1724308,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 9001,
+          "outputTokens": 9337,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22788,
+          "webSearchRequests": 0,
+          "costUSD": 0.1724308,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0088_round_2_group_0.json"
+    },
+    {
+      "call_index": 89,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1683873,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8563,
+          "outputTokens": 9266,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 21805,
+          "webSearchRequests": 0,
+          "costUSD": 0.1683873,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0089_round_2_group_1.json"
+    },
+    {
+      "call_index": 90,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.17365730000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8773,
+          "outputTokens": 9520,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22729,
+          "webSearchRequests": 0,
+          "costUSD": 0.17365730000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0090_round_2_group_2.json"
+    },
+    {
+      "call_index": 91,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1703278,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8677,
+          "outputTokens": 9365,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22094,
+          "webSearchRequests": 0,
+          "costUSD": 0.1703278,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0091_round_2_group_3.json"
+    },
+    {
+      "call_index": 92,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.23566020000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11403,
+          "outputTokens": 14889,
+          "cacheReadInputTokens": 48796,
+          "cacheCreationInputTokens": 21682,
+          "webSearchRequests": 0,
+          "costUSD": 0.23566020000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0092_round_3_group_0.json"
+    },
+    {
+      "call_index": 93,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.10167359999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10825,
+          "outputTokens": 5116,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11008,
+          "webSearchRequests": 0,
+          "costUSD": 0.10167359999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0093_round_3_group_1.json"
+    },
+    {
+      "call_index": 94,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1083456,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11101,
+          "outputTokens": 5659,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 11284,
+          "webSearchRequests": 0,
+          "costUSD": 0.1083456,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0094_round_3_group_2.json"
+    },
+    {
+      "call_index": 95,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.18409530000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10972,
+          "outputTokens": 9169,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 26549,
+          "webSearchRequests": 0,
+          "costUSD": 0.18409530000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0095_round_3_group_3.json"
+    },
+    {
+      "call_index": 96,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2072293,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13799,
+          "outputTokens": 9195,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 33437,
+          "webSearchRequests": 0,
+          "costUSD": 0.2072293,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0096_round_4_group_0.json"
+    },
+    {
+      "call_index": 97,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.11662059999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13091,
+          "outputTokens": 5591,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13274,
+          "webSearchRequests": 0,
+          "costUSD": 0.11662059999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0097_round_4_group_1.json"
+    },
+    {
+      "call_index": 98,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2092708,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13431,
+          "outputTokens": 9782,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32200,
+          "webSearchRequests": 0,
+          "costUSD": 0.2092708,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0098_round_4_group_2.json"
+    },
+    {
+      "call_index": 99,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2056083,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13266,
+          "outputTokens": 9476,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 32091,
+          "webSearchRequests": 0,
+          "costUSD": 0.2056083,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0099_round_4_group_3.json"
+    },
+    {
+      "call_index": 100,
+      "round": 0,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1346938,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4080,
+          "outputTokens": 8897,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 13390,
+          "webSearchRequests": 0,
+          "costUSD": 0.1346938,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0100_round_0_group_0.json"
+    },
+    {
+      "call_index": 101,
+      "round": 0,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0722756,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4141,
+          "outputTokens": 5184,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 4324,
+          "webSearchRequests": 0,
+          "costUSD": 0.0722756,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0101_round_0_group_1.json"
+    },
+    {
+      "call_index": 102,
+      "round": 0,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.13250430000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4134,
+          "outputTokens": 8776,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12955,
+          "webSearchRequests": 0,
+          "costUSD": 0.13250430000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0102_round_0_group_2.json"
+    },
+    {
+      "call_index": 103,
+      "round": 0,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.13126580000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 4066,
+          "outputTokens": 8705,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 12798,
+          "webSearchRequests": 0,
+          "costUSD": 0.13126580000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0103_round_0_group_3.json"
+    },
+    {
+      "call_index": 104,
+      "round": 1,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.13211869999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6383,
+          "outputTokens": 8810,
+          "cacheReadInputTokens": 20001,
+          "cacheCreationInputTokens": 10901,
+          "webSearchRequests": 0,
+          "costUSD": 0.13211869999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0104_round_1_group_0.json"
+    },
+    {
+      "call_index": 105,
+      "round": 1,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1510708,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6481,
+          "outputTokens": 8938,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 17856,
+          "webSearchRequests": 0,
+          "costUSD": 0.1510708,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0105_round_1_group_1.json"
+    },
+    {
+      "call_index": 106,
+      "round": 1,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.0824516,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6469,
+          "outputTokens": 5154,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6652,
+          "webSearchRequests": 0,
+          "costUSD": 0.0824516,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0106_round_1_group_2.json"
+    },
+    {
+      "call_index": 107,
+      "round": 1,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.07929510000000001,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 6352,
+          "outputTokens": 4891,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 6535,
+          "webSearchRequests": 0,
+          "costUSD": 0.07929510000000001,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0107_round_1_group_3.json"
+    },
+    {
+      "call_index": 108,
+      "round": 2,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1510293,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8681,
+          "outputTokens": 9551,
+          "cacheReadInputTokens": 22299,
+          "cacheCreationInputTokens": 13479,
+          "webSearchRequests": 0,
+          "costUSD": 0.1510293,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0108_round_2_group_0.json"
+    },
+    {
+      "call_index": 109,
+      "round": 2,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1649303,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8817,
+          "outputTokens": 8726,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22379,
+          "webSearchRequests": 0,
+          "costUSD": 0.1649303,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0109_round_2_group_1.json"
+    },
+    {
+      "call_index": 110,
+      "round": 2,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1763568,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8809,
+          "outputTokens": 9725,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 22960,
+          "webSearchRequests": 0,
+          "costUSD": 0.1763568,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0110_round_2_group_2.json"
+    },
+    {
+      "call_index": 111,
+      "round": 2,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.16766730000000002,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 8643,
+          "outputTokens": 9154,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 21901,
+          "webSearchRequests": 0,
+          "costUSD": 0.16766730000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0111_round_2_group_3.json"
+    },
+    {
+      "call_index": 112,
+      "round": 3,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1880968,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10979,
+          "outputTokens": 9343,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27448,
+          "webSearchRequests": 0,
+          "costUSD": 0.1880968,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0112_round_3_group_0.json"
+    },
+    {
+      "call_index": 113,
+      "round": 3,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1987163,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11150,
+          "outputTokens": 10196,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 28147,
+          "webSearchRequests": 0,
+          "costUSD": 0.1987163,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0113_round_3_group_1.json"
+    },
+    {
+      "call_index": 114,
+      "round": 3,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.16529799999999997,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 11152,
+          "outputTokens": 9563,
+          "cacheReadInputTokens": 24770,
+          "cacheCreationInputTokens": 16964,
+          "webSearchRequests": 0,
+          "costUSD": 0.16529799999999997,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0114_round_3_group_2.json"
+    },
+    {
+      "call_index": 115,
+      "round": 3,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.18466529999999998,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 10932,
+          "outputTokens": 9047,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 27297,
+          "webSearchRequests": 0,
+          "costUSD": 0.18466529999999998,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0115_round_3_group_3.json"
+    },
+    {
+      "call_index": 116,
+      "round": 4,
+      "group": 0,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1986838,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13275,
+          "outputTokens": 8909,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31582,
+          "webSearchRequests": 0,
+          "costUSD": 0.1986838,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0116_round_4_group_0.json"
+    },
+    {
+      "call_index": 117,
+      "round": 4,
+      "group": 1,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.1176256,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13481,
+          "outputTokens": 5516,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13664,
+          "webSearchRequests": 0,
+          "costUSD": 0.1176256,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0117_round_4_group_1.json"
+    },
+    {
+      "call_index": 118,
+      "round": 4,
+      "group": 2,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.11681259999999999,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13487,
+          "outputTokens": 5432,
+          "cacheReadInputTokens": 6718,
+          "cacheCreationInputTokens": 13670,
+          "webSearchRequests": 0,
+          "costUSD": 0.11681259999999999,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0118_round_4_group_2.json"
+    },
+    {
+      "call_index": 119,
+      "round": 4,
+      "group": 3,
+      "episodes": 10,
+      "proposals_returned": 40,
+      "is_error": false,
+      "cost_usd": 0.2038198,
+      "model_usage": {
+        "claude-sonnet-5": {
+          "inputTokens": 13218,
+          "outputTokens": 9330,
+          "cacheReadInputTokens": 20444,
+          "cacheCreationInputTokens": 31998,
+          "webSearchRequests": 0,
+          "costUSD": 0.2038198,
+          "contextWindow": 200000,
+          "maxOutputTokens": 64000,
+          "canonicalModel": "claude-sonnet-5",
+          "provider": "firstParty"
+        }
+      },
+      "transcript": "/Users/raphaelcaillon/Documents/ChatGPT/HF-Papers/artifacts/agentic/transcripts/call_0119_round_4_group_3.json"
+    }
+  ],
+  "total_cost_usd": 17.5404912,
+  "matched_quartets": 60,
+  "episodes": 240,
+  "candidate_trials": 6000,
+  "budgets": [
+    5,
+    9,
+    13,
+    17,
+    21,
+    25
+  ],
+  "config": "configs/deep_paper.toml",
+  "claude_cli_version": "2.1.241 (Claude Code)",
+  "result_sha256": "5f0d28484f0965830f3a57f7425bad76cbcc72fd00de325a4f820617c535fa41",
+  "audit_sha256": "e8652dbd17b0f285c15244971a7b5901e655534f9abc868f307c1c2409cf7baa"
+}

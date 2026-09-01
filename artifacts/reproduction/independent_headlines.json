@@ -1,0 +1,386 @@
+{
+  "status": "PASS",
+  "scope": "same-data independent implementation; not an independent replication",
+  "implementation_boundary": "stdlib CSV/math plus scipy t quantiles; no import or call to scripts/analyze_deep.py",
+  "unit_counts": {
+    "synthetic_markets": 2000,
+    "empirical_paths": 300,
+    "empirical_cells": 15,
+    "empirical_paths_per_cell": [
+      20
+    ],
+    "empirical_eras": 3,
+    "agent_paths": 60,
+    "agent_cells": 15,
+    "agent_paths_per_cell": [
+      4
+    ]
+  },
+  "derived_checks": {
+    "synthetic_confirmation_90pct_interval": {
+      "mean": 0.00023798434232192323,
+      "low": -0.016961002582448065,
+      "high": 0.017436971267091914
+    },
+    "synthetic_confirmation_inside_equivalence_band": true,
+    "empirical_validation_exact_sign_flip_p": 6.103515625e-05,
+    "agent_validation_exact_sign_flip_p": 0.00152587890625
+  },
+  "human_review_values": {
+    "empirical_validation_cells": [
+      {
+        "dataset": "industries_49",
+        "block_start": 1990,
+        "contrast": 0.27959672004657493
+      },
+      {
+        "dataset": "industries_49",
+        "block_start": 2002,
+        "contrast": 0.2494423637742571
+      },
+      {
+        "dataset": "industries_49",
+        "block_start": 2014,
+        "contrast": 0.15137064188070354
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 1990,
+        "contrast": 0.33465484973299775
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 2002,
+        "contrast": 0.21346788307115427
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 2014,
+        "contrast": 0.22979331133033748
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 1990,
+        "contrast": 0.18425051669718778
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 2002,
+        "contrast": 0.23530138937899955
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 2014,
+        "contrast": 0.2010530839947239
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 1990,
+        "contrast": 0.2859606225539134
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 2002,
+        "contrast": 0.20869342477800812
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 2014,
+        "contrast": 0.11591127703830731
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 1990,
+        "contrast": 0.1756544805160551
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 2002,
+        "contrast": 0.25876750259234715
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 2014,
+        "contrast": 0.2107834231389901
+      }
+    ],
+    "empirical_validation_eras": [
+      {
+        "block_start": 1990,
+        "contrast": 0.2520234379093458
+      },
+      {
+        "block_start": 2002,
+        "contrast": 0.23313451271895325
+      },
+      {
+        "block_start": 2014,
+        "contrast": 0.18178234747661245
+      }
+    ],
+    "agent_validation_cells": [
+      {
+        "dataset": "industries_49",
+        "block_start": 1990,
+        "contrast": 0.18987201043259755
+      },
+      {
+        "dataset": "industries_49",
+        "block_start": 2002,
+        "contrast": 0.303493109151038
+      },
+      {
+        "dataset": "industries_49",
+        "block_start": 2014,
+        "contrast": 0.28245712672081946
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 1990,
+        "contrast": 0.04269987079565066
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 2002,
+        "contrast": -0.25334057663090453
+      },
+      {
+        "dataset": "size_bm_100",
+        "block_start": 2014,
+        "contrast": 0.16643209524231517
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 1990,
+        "contrast": 0.23682126999119302
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 2002,
+        "contrast": 0.22703726452855175
+      },
+      {
+        "dataset": "size_bm_25",
+        "block_start": 2014,
+        "contrast": 0.2560584365274001
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 1990,
+        "contrast": 0.3710845774826175
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 2002,
+        "contrast": 0.26852091668549427
+      },
+      {
+        "dataset": "size_momentum_25",
+        "block_start": 2014,
+        "contrast": 0.34119172435667866
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 1990,
+        "contrast": 0.16625442145552694
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 2002,
+        "contrast": 0.0023390062583233673
+      },
+      {
+        "dataset": "size_short_reversal_25",
+        "block_start": 2014,
+        "contrast": 0.11028091283292128
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "synthetic_validation_mean",
+      "actual": 0.25528913600655806,
+      "expected": 0.25528913600655806,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_validation_low",
+      "actual": 0.24589881936396782,
+      "expected": 0.24589881936396782,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_validation_high",
+      "actual": 0.2646794526491483,
+      "expected": 0.2646794526491483,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_confirmation_mean",
+      "actual": 0.00023798434232192323,
+      "expected": 0.00023798434232192057,
+      "absolute_difference": 2.656295322589486e-18,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_confirmation_low",
+      "actual": -0.02025878558819064,
+      "expected": -0.020258785588190643,
+      "absolute_difference": 3.469446951953614e-18,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_confirmation_high",
+      "actual": 0.02073475427283449,
+      "expected": 0.020734754272834485,
+      "absolute_difference": 3.469446951953614e-18,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_raw_dsr_rate",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_effective_dsr_rate",
+      "actual": 0.42,
+      "expected": 0.42,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_bonferroni_rate",
+      "actual": 0.0965,
+      "expected": 0.0965,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_bh_rate",
+      "actual": 0.352,
+      "expected": 0.352,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "synthetic_sealed_rate",
+      "actual": 0.053,
+      "expected": 0.053,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_validation_mean",
+      "actual": 0.22231343270163714,
+      "expected": 0.2223134327016372,
+      "absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_validation_low",
+      "actual": 0.19159717144987998,
+      "expected": 0.19159717144988003,
+      "absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_validation_high",
+      "actual": 0.2530296939533943,
+      "expected": 0.25302969395339436,
+      "absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_era_low",
+      "actual": 0.13201666615702523,
+      "expected": 0.13201666615702523,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_era_high",
+      "actual": 0.3126101992462491,
+      "expected": 0.3126101992462491,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "empirical_sealed_rate",
+      "actual": 0.05333333333333334,
+      "expected": 0.05333333333333334,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_validation_mean",
+      "actual": 0.1807468110553482,
+      "expected": 0.18074681105534823,
+      "absolute_difference": 2.7755575615628914e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_validation_low",
+      "actual": 0.09308277843799166,
+      "expected": 0.0930827784379917,
+      "absolute_difference": 4.163336342344337e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_validation_high",
+      "actual": 0.26841084367270474,
+      "expected": 0.26841084367270474,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_confirmation_mean",
+      "actual": 0.026579406096124397,
+      "expected": 0.026579406096124393,
+      "absolute_difference": 3.469446951953614e-18,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_confirmation_low",
+      "actual": -0.07826353976620085,
+      "expected": -0.07826353976620085,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    },
+    {
+      "name": "agent_confirmation_high",
+      "actual": 0.13142235195844965,
+      "expected": 0.13142235195844962,
+      "absolute_difference": 2.7755575615628914e-17,
+      "tolerance": 1e-10,
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}
