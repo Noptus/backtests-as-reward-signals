@@ -394,8 +394,10 @@ about the prevalence or form of real alpha.
 Figure~\ref{fig:synthetic-trajectories} shows selected validation and sealed
 confirmation Sharpe by candidate budget. At 250 candidates, target feedback
 adds \SynValDiff\ validation Sharpe relative to sham (95\% CI \SynValLow\ to
-\SynValHigh; paired sign-flip $p=10^{-5}$, the Monte Carlo floor with 99,999
-draws). The corresponding confirmation difference is \SynConfDiff\
+\SynValHigh; the paired sign-flip test attains its smallest reportable Monte
+Carlo value, $p=1/(99{,}999+1)=10^{-5}$). This reports the chosen resolution;
+it does not imply finer $p$-value precision. The corresponding confirmation
+difference is \SynConfDiff\
 (95\% CI \SynConfLow\ to \SynConfHigh), and its 90\% interval lies inside the
 pre-specified $[-0.10,0.10]$ equivalence band. The optimism-gap contrast is
 therefore almost exactly the validation contrast. This is not merely selection
