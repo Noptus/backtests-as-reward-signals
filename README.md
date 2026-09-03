@@ -52,17 +52,19 @@ uv run --isolated --frozen --extra dev python -m alpha_firewall.repro_check
 ```
 
 This command makes no network requests and no hosted-model calls. It checks all
-174 frozen inputs against SHA-256 hashes, runs Ruff and 61 tests, regenerates
-tables and figures in a new staging directory, recomputes 23 claim-critical
-components through a separately coded verifier, and compiles the eight-page
-paper. It fails closed on a missing input, hash mismatch, test failure, numeric
-disagreement, or malformed paper.
+frozen inputs against SHA-256 hashes, runs Ruff and 64 tests, regenerates three
+complete synthetic searches from fixed seeds, compares 2,250 candidate rows and
+54 result rows with the archive, regenerates tables and figures, recomputes 23
+claim-critical components through a separately coded verifier, and compiles the
+eight-page paper. It fails closed on a missing input, hash mismatch, test
+failure, numeric disagreement, or malformed paper.
 
 This is artifact reproduction, not an independent replication and not a full
 rerun of 2,293,500 candidate evaluations. See
 [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the distinction and the full-run
-commands. The CI badge covers lint and the 61-test suite; the complete artifact
-gate also needs Tectonic and is run with the command above.
+commands. The CI badge covers lint, the 64-test suite, and the three-market
+generator audit; the complete artifact gate also needs Tectonic and is run with
+the command above.
 
 ## Where to look
 

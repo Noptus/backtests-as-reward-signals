@@ -217,6 +217,51 @@ def main() -> None:
             raise RuntimeError("pytest failed")
 
         staged_results = staging / "artifacts/results"
+        staged_generator_report = (
+            staging / "artifacts/reproduction/synthetic_generator_spotcheck.json"
+        )
+        generator_audit = run_command(
+            [
+                sys.executable,
+                "-m",
+                "alpha_firewall.generator_audit",
+                "--config",
+                str(staging / "configs/deep_paper.toml"),
+                "--candidate-audit",
+                str(staged_results / "synthetic_deep_paper_candidate_audit.csv.gz"),
+                "--results",
+                str(staged_results / "synthetic_deep_paper_trials.csv"),
+                "--output",
+                str(staged_generator_report),
+            ],
+            cwd=root,
+        )
+        report["steps"]["synthetic_generator_spotcheck"] = generator_audit
+        if generator_audit["returncode"] != 0:
+            raise RuntimeError("synthetic generator-to-archive audit failed")
+        expected_generator_report = json.loads(
+            (
+                root
+                / "artifacts/reproduction/synthetic_generator_spotcheck.json"
+            ).read_text(encoding="utf-8")
+        )
+        actual_generator_report = json.loads(
+            staged_generator_report.read_text(encoding="utf-8")
+        )
+        generator_differences = json_differences(
+            expected_generator_report, actual_generator_report
+        )
+        report["steps"]["synthetic_generator_spotcheck_comparison"] = {
+            "status": "PASS" if not generator_differences else "FAIL",
+            "differences": generator_differences,
+            "seeds": actual_generator_report["seeds"],
+            "candidate_rows": actual_generator_report["candidate_comparison"]["rows"],
+            "result_rows": actual_generator_report["result_comparison"]["rows"],
+            "claim_boundary": actual_generator_report["claim_boundary"],
+        }
+        if generator_differences:
+            raise RuntimeError("synthetic generator audit report differs")
+
         staged_assets = staging / "artifacts/paper"
         analysis = run_command(
             [
@@ -356,6 +401,9 @@ def main() -> None:
         report["staged_output_hashes"][
             "artifacts/reproduction/independent_headlines.json"
         ] = sha256(staged_independent_report)
+        report["staged_output_hashes"][
+            "artifacts/reproduction/synthetic_generator_spotcheck.json"
+        ] = sha256(staged_generator_report)
         report["staged_pdf"] = {
             "path": str(staged_pdf),
             "sha256": sha256(staged_pdf),

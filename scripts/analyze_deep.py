@@ -687,6 +687,10 @@ def manifest_candidates() -> list[Path]:
         OUT / "agentic_table.tex",
         OUT / "power_table.tex",
         ROOT / "artifacts" / "reproduction" / "independent_headlines.json",
+        ROOT
+        / "artifacts"
+        / "reproduction"
+        / "synthetic_generator_spotcheck.json",
     ]
     return source_files + transcript_files + result_files + deterministic_oracles
 

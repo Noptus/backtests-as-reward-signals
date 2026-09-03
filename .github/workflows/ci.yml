@@ -27,3 +27,4 @@ jobs:
       - run: uv sync --frozen --extra dev
       - run: uv run ruff check src tests scripts
       - run: uv run pytest
+      - run: uv run python -m alpha_firewall.generator_audit --output /tmp/synthetic-generator-audit.json

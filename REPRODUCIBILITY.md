@@ -11,10 +11,11 @@ uv run --isolated --frozen --extra dev python -m alpha_firewall.repro_check
 
 The verifier first hashes every item in
 `artifacts/results/deep_artifact_manifest.json`. It then runs static checks and
-61 tests, regenerates all numeric and text outputs from the archived trials,
-executes a separately coded headline verifier, and compiles the paper in a new
-staging directory. Hosted-model generations are not replayed. No data are
-downloaded.
+64 tests, regenerates three complete synthetic searches from fixed seeds and
+compares 2,250 candidate rows plus 54 result rows with the archive, regenerates
+all numeric and text outputs from the archived trials, executes a separately
+coded headline verifier, and compiles the paper in a new staging directory.
+Hosted-model generations are not replayed. No data are downloaded.
 
 A successful run ends with a JSON object whose `status` is `PASS`. The detailed
 report is written inside the timestamped `tmp/reproduction/` directory. The
@@ -28,6 +29,12 @@ recomputes 23 claim-critical components directly from the frozen trial CSVs and
 compares them at explicit tolerances. This catches divergent coding and
 aggregation, but it is still a same-data check. It cannot reveal a defect shared
 by the archived trials and the code that generated them.
+
+The generator spot check addresses a different provenance question. It reruns
+the first, midpoint, and last of the 2,000 synthetic markets from their seeds,
+including all three search policies and all six budget prefixes. This verifies
+the code-to-archive path for those three fixed markets only. It is neither a
+full experimental rerun nor an independent replication of the method.
 
 ## 2. Rerun the experiments
 

@@ -1,7 +1,7 @@
 {
   "README.md": {
-    "bytes": 6373,
-    "sha256": "20055c80c1622224f88cac44e9a7b8046645ec3e54f02469b07fd89aecf1b52f"
+    "bytes": 6508,
+    "sha256": "6a72de9ebca05dd44d05d3a04097b7a7d57826f1c1a36f9b4a0988256c88e26e"
   },
   "pyproject.toml": {
     "bytes": 1449,
@@ -20,16 +20,16 @@
     "sha256": "bbaaef6a0a7692cadcf56664cb91e141adcacb290532bb6611053c64a1018618"
   },
   "paper/deep_main.tex": {
-    "bytes": 38093,
-    "sha256": "4966771e2b4c4803c2f6c62a60381c84978f5796dbdf67c2ad3dcc984a47ca18"
+    "bytes": 38421,
+    "sha256": "6bc5c236544b41c896180718c698772cedc0ffc20b3f8e7263b4778d7666837a"
   },
   "paper/references.bib": {
     "bytes": 6930,
     "sha256": "5dfb67d03c694ef249282329f25fdbe8332335dbdb13f96a648533d76b7c5b84"
   },
   "scripts/analyze_deep.py": {
-    "bytes": 30175,
-    "sha256": "a817a0a84a7fdb88bd90906dd70d672287bdcc16a5106eb1c2a13ca92b0c0fee"
+    "bytes": 30283,
+    "sha256": "9bb4c45303c7c7409842f65f84db43f9491be12e4d70d223e3dd54afcb9c2122"
   },
   "src/alpha_firewall/__init__.py": {
     "bytes": 169,
@@ -54,6 +54,10 @@
   "src/alpha_firewall/experiment.py": {
     "bytes": 18443,
     "sha256": "c6f798a7a9a7dda492138187af20e0975801480903186c3cc03f9f49adb419d3"
+  },
+  "src/alpha_firewall/generator_audit.py": {
+    "bytes": 11790,
+    "sha256": "08931f2f74361c9cb1efec38d7cf42993a531f620d80418f24873c9ed9b7ea02"
   },
   "src/alpha_firewall/headline_verify.py": {
     "bytes": 15994,
@@ -84,8 +88,8 @@
     "sha256": "1325ee6d25211416259f7395dddf5f5fc3415747023d2810861a9648286d0826"
   },
   "src/alpha_firewall/repro_check.py": {
-    "bytes": 15313,
-    "sha256": "6f1839c9342de51a9f6eb68668ab107525151f2d52cc53c27f67538d50524257"
+    "bytes": 17450,
+    "sha256": "7e5df07df5531c005ac7e0de1d3ccfdd5e9207edd15400a4514fbfbb04e6998c"
   },
   "src/alpha_firewall/robustness.py": {
     "bytes": 2944,
@@ -106,6 +110,10 @@
   "tests/test_data.py": {
     "bytes": 823,
     "sha256": "9ce8fcd9746a45e0f9bbffd7ddbcdd24b9fdae48a7681f835ebd3e06d12c322c"
+  },
+  "tests/test_generator_audit.py": {
+    "bytes": 2203,
+    "sha256": "5162b40b18efe3da8b61fd99712614f432b0b5129e27313f8abc26600f830e09"
   },
   "tests/test_headline_verify.py": {
     "bytes": 1828,
@@ -694,5 +702,9 @@
   "artifacts/reproduction/independent_headlines.json": {
     "bytes": 9957,
     "sha256": "696b5ab4a13a0f0645f3736ba1d0516a344b4e81878959ed9214978c8817d58a"
+  },
+  "artifacts/reproduction/synthetic_generator_spotcheck.json": {
+    "bytes": 3053,
+    "sha256": "f6fbe494d93ad4fb0f210137265abe7309afbb404b1aae7eeb9d9bc656836716"
   }
 }

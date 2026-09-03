@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "classification": "post-release bounded provenance audit; not replication",
+  "seeds": [
+    50000,
+    50999,
+    51999
+  ],
+  "selection_rule": "first, midpoint, and last of 2,000 consecutive markets",
+  "markets_regenerated": 3,
+  "markets_not_regenerated": 1997,
+  "candidate_comparison": {
+    "rows": 2250,
+    "exact_fields": [
+      "market_seed",
+      "search_seed",
+      "policy",
+      "cost_bps",
+      "trial_index",
+      "fast_window",
+      "slow_window",
+      "mix",
+      "top_k",
+      "rebalance_days",
+      "vol_window",
+      "volatility_scale",
+      "strategy_id"
+    ],
+    "float_fields": [
+      "validation_sharpe",
+      "feedback_sharpe"
+    ],
+    "maximum_absolute_differences": {
+      "validation_sharpe": 2.220446049250313e-16,
+      "feedback_sharpe": 2.220446049250313e-16
+    }
+  },
+  "result_comparison": {
+    "rows": 54,
+    "exact_fields": [
+      "market_seed",
+      "search_seed",
+      "policy",
+      "budget",
+      "cost_bps",
+      "selected_spec",
+      "naive_promote",
+      "dsr_promote",
+      "dsr_effective_promote",
+      "bonferroni_promote",
+      "bh_promote",
+      "holdout_promote",
+      "dual_gate_promote",
+      "dual_effective_gate_promote"
+    ],
+    "float_fields": [
+      "effective_trials",
+      "validation_sharpe",
+      "confirmation_sharpe",
+      "optimism_gap",
+      "validation_psr",
+      "validation_dsr",
+      "validation_dsr_effective",
+      "validation_hac_probability",
+      "confirmation_psr",
+      "confirmation_hac_probability"
+    ],
+    "maximum_absolute_differences": {
+      "effective_trials": 0.0,
+      "validation_sharpe": 2.220446049250313e-16,
+      "confirmation_sharpe": 8.326672684688674e-17,
+      "optimism_gap": 2.220446049250313e-16,
+      "validation_psr": 1.1102230246251565e-16,
+      "validation_dsr": 5.551115123125783e-17,
+      "validation_dsr_effective": 1.1102230246251565e-16,
+      "validation_hac_probability": 1.1102230246251565e-16,
+      "confirmation_psr": 1.1102230246251565e-16,
+      "confirmation_hac_probability": 1.1102230246251565e-16
+    }
+  },
+  "structural_checks": {
+    "all_six_budgets_are_prefixes": true,
+    "selected_spec_is_first_validation_argmax": true
+  },
+  "tolerance": {
+    "absolute": 1e-12,
+    "relative": 1e-12
+  },
+  "inputs": {
+    "config": {
+      "path": "configs/deep_paper.toml",
+      "sha256": "08ef491fcc7e305b2f850ff6a5a6c9bf90bbe85fc115db81d0085044b99343c0"
+    },
+    "candidate_archive": {
+      "path": "artifacts/results/synthetic_deep_paper_candidate_audit.csv.gz",
+      "sha256": "5184afda439850a505338565457a87536fa043934635caa34b1af638203b9f4a"
+    },
+    "result_archive": {
+      "path": "artifacts/results/synthetic_deep_paper_trials.csv",
+      "sha256": "e1645e67740c4753fed6cc62ef008e7c43c4b36a598246c090567313e8c93438"
+    }
+  },
+  "hosted_model_calls": 0,
+  "network_downloads": 0,
+  "claim_boundary": "Confirms code-to-archive determinism for three fixed markets only; does not validate the method or independently replicate results."
+}

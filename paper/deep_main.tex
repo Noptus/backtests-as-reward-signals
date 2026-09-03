@@ -640,7 +640,7 @@ used to select a live strategy.
 
 \section{Reproducibility and Disclosure}
 
-The artifact contains the frozen TOML protocol, source, 61 tests, 2,000-market
+The artifact contains the frozen TOML protocol, source, 64 tests, 2,000-market
 candidate audit, empirical sign seeds, all raw-file SHA-256 hashes, Claude
 transcripts, model/cost metadata, result hashes, analysis script, generated
 tables, and figures. Across the four experiments it records 2,293,500 candidate
@@ -668,6 +668,12 @@ agent aggregation units. This same-data cross-check can
 detect divergent coding or aggregation, but it does not rerun candidate
 searches, constitute independent replication, or detect errors shared by the
 archived trials and their generating code.
+
+A bounded post-release audit also regenerates the complete candidate traces and
+all six prefix result rows for the first, midpoint, and last synthetic markets.
+It matches 2,250 candidate rows and 54 result rows at $10^{-12}$ tolerance. This
+three-market provenance check is neither a full rerun nor an independent
+replication.
 
 Claude was used in two roles. It was a measured proposal policy in the agent
 experiment (\AgentCalls\ calls, \AgentCost\ recorded service cost), where every
