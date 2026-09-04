@@ -82,7 +82,9 @@ the command above.
    behind the manuscript macros and tables.
 6. [independent_headlines.json](artifacts/reproduction/independent_headlines.json)
    records the same-data verifier and its tolerance checks.
-7. [The research-firewall specification](paper/p1_research_firewall_spec.md)
+7. [The generator provenance note](paper/generator_provenance_note.md) explains
+   the three-market code-to-archive rerun and its limits.
+8. [The research-firewall specification](paper/p1_research_firewall_spec.md)
    translates the evidence into an operational control design while labeling
    what the paper did and did not validate.
 

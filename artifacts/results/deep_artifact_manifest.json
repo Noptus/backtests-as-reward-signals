@@ -1,7 +1,7 @@
 {
   "README.md": {
-    "bytes": 6508,
-    "sha256": "6a72de9ebca05dd44d05d3a04097b7a7d57826f1c1a36f9b4a0988256c88e26e"
+    "bytes": 6646,
+    "sha256": "54d48cebedac2bc08d7b5b0badf825de3ef1f4d28e0e7ce237f503d63c040d6d"
   },
   "pyproject.toml": {
     "bytes": 1449,
@@ -19,6 +19,18 @@
     "bytes": 7752,
     "sha256": "bbaaef6a0a7692cadcf56664cb91e141adcacb290532bb6611053c64a1018618"
   },
+  "paper/generator_provenance_note.md": {
+    "bytes": 2759,
+    "sha256": "f54384d74dfde43a27c075fb2d253ea3a0e2228cf4e26a636e6e378e58987978"
+  },
+  "paper/p1_research_firewall_spec.md": {
+    "bytes": 5648,
+    "sha256": "e4575be106cf0e32adc9474e24b2628a014bca0e90d47ac7bd359617c393edd3"
+  },
+  "paper/practitioner_brief.md": {
+    "bytes": 3099,
+    "sha256": "511d993e25b1dd211ae1fed80d603fcf622fd44387e7be33c7db03f8b325246c"
+  },
   "paper/deep_main.tex": {
     "bytes": 38421,
     "sha256": "6bc5c236544b41c896180718c698772cedc0ffc20b3f8e7263b4778d7666837a"
@@ -28,8 +40,8 @@
     "sha256": "5dfb67d03c694ef249282329f25fdbe8332335dbdb13f96a648533d76b7c5b84"
   },
   "scripts/analyze_deep.py": {
-    "bytes": 30283,
-    "sha256": "9bb4c45303c7c7409842f65f84db43f9491be12e4d70d223e3dd54afcb9c2122"
+    "bytes": 30272,
+    "sha256": "4b74c86e733b2c020065916478795027cfc0555a0ee65b7d7d2e77e50b56d461"
   },
   "src/alpha_firewall/__init__.py": {
     "bytes": 169,

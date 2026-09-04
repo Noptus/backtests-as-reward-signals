@@ -35,6 +35,8 @@ the first, midpoint, and last of the 2,000 synthetic markets from their seeds,
 including all three search policies and all six budget prefixes. This verifies
 the code-to-archive path for those three fixed markets only. It is neither a
 full experimental rerun nor an independent replication of the method.
+The field-by-field scope and limitations are recorded in
+[`paper/generator_provenance_note.md`](paper/generator_provenance_note.md).
 
 ## 2. Rerun the experiments
 

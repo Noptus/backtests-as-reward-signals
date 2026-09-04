@@ -657,7 +657,7 @@ def manifest_candidates() -> list[Path]:
         ROOT / "pyproject.toml",
         ROOT / "uv.lock",
         ROOT / "configs" / "deep_paper.toml",
-        ROOT / "paper" / "deep_revision_analysis_plan.md",
+        *sorted((ROOT / "paper").glob("*.md")),
         ROOT / "paper" / "deep_main.tex",
         ROOT / "paper" / "references.bib",
         ROOT / "scripts" / "analyze_deep.py",
