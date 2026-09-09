@@ -1,11 +1,16 @@
 # Backtests as Reward Signals
 
+## Project at a glance
+
+A research-engineering artifact about how adaptive agents can overfit evaluation feedback. The useful entry points are the experiment controls, auditable agent traces, and the offline reproduction command below. This is a working paper, not a deployed trading system or a completed independent replication.
+
+
 [![CI](https://github.com/Noptus/backtests-as-reward-signals/actions/workflows/ci.yml/badge.svg)](https://github.com/Noptus/backtests-as-reward-signals/actions/workflows/ci.yml)
 [![Paper](https://img.shields.io/badge/paper-PDF-b31b1b.svg)](output/pdf/backtests_as_reward_signals.pdf)
 [![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 
 This repository accompanies *Backtests as Reward Signals*. It is a controlled
-evaluation harness—not a trading signal—for one failure mode in autonomous
+evaluation harness - not a trading signal - for one failure mode in autonomous
 research: when a proposer can read a backtest score and condition its next idea
 on that score, the backtest has become a reward signal and the tested family is
 data-adaptive.
