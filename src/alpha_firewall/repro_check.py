@@ -132,7 +132,10 @@ def run_command(command: list[str], *, cwd: Path) -> dict[str, Any]:
 
 
 def command_version(command: list[str]) -> str | None:
-    result = subprocess.run(command, capture_output=True, text=True, check=False)
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, check=False)
+    except FileNotFoundError:
+        return None
     output = (result.stdout or result.stderr).strip()
     return output.splitlines()[0] if output else None
 
@@ -200,6 +203,10 @@ def main() -> None:
     }
     started = time.monotonic()
     try:
+        missing_tools = [name for name in ("uv", "tectonic", "pdftotext")
+                         if report["environment"].get(name) is None]
+        if missing_tools:
+            raise RuntimeError("Missing required tools: " + ", ".join(missing_tools))
         rows = verify_manifest(root, manifest_path)
         report["steps"]["manifest"] = {"status": "PASS", "files": rows}
         copy_manifest_inputs(root, manifest_path, staging)

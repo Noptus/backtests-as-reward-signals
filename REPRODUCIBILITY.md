@@ -11,11 +11,13 @@ uv run --isolated --frozen --extra dev python -m alpha_firewall.repro_check
 
 The verifier first hashes every item in
 `artifacts/results/deep_artifact_manifest.json`. It then runs static checks and
-64 tests, regenerates three complete synthetic searches from fixed seeds and
+the unit test suite, regenerates three complete synthetic searches from fixed seeds and
 compares 2,250 candidate rows plus 54 result rows with the archive, regenerates
 all numeric and text outputs from the archived trials, executes a separately
 coded headline verifier, and compiles the paper in a new staging directory.
 Hosted-model generations are not replayed. No data are downloaded.
+
+The complete gate needs `uv`, `tectonic` and `pdftotext` on `PATH`. Missing tools produce a failure report naming the prerequisites before expensive checks run.
 
 A successful run ends with a JSON object whose `status` is `PASS`. The detailed
 report is written inside the timestamped `tmp/reproduction/` directory. The
