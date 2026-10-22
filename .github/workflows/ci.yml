@@ -25,6 +25,10 @@ jobs:
         with:
           python-version-file: .python-version
       - run: uv sync --frozen --extra dev
+      - name: Verify frozen input checksums
+        run: >-
+          PYTHONPATH=src uv run python -c
+          "from pathlib import Path; from alpha_firewall.repro_check import verify_manifest; verify_manifest(Path.cwd(), Path('artifacts/results/deep_artifact_manifest.json'))"
       - run: uv run ruff check src tests scripts
       - run: uv run pytest
       - run: uv run python -m alpha_firewall.generator_audit --output /tmp/synthetic-generator-audit.json
